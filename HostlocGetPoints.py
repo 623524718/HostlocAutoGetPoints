@@ -233,7 +233,7 @@ class HostlocGetPoints():
                 except Exception as e:
                     self.tg_text = self.tg_text + '程序执行异常：'
                     print('程序执行异常：' + str(e))
-                    print('*' * 30 +)
+                    print('*' * 30)
                 continue
             self.tg_text = self.tg_text + '程序执行完毕，获取积分过程结束'
             print('程序执行完毕，获取积分过程结束')
