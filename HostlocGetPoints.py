@@ -9,14 +9,6 @@ from pyaes import AESModeOfOperationCBC
 from requests import Session as req_Session
 
 
-def timenow():
-    timeStamp = int(time.time())  # 获取时间戳
-    timeArray = time.localtime(timeStamp)  # 转换为本地时间
-    out_time = time.strftime('%Y{}%m{}%d{} %H{}%M{}%S{}', timeArray).format('年', '月', '日', '时', '分', '秒')  # 年月日输出
-    return out_time
-
-
-
 class HostlocGetPoints():
 
     tg_text = ''
@@ -207,6 +199,7 @@ class HostlocGetPoints():
                    '?parse_mode=MarkdownV2&chat_id={}&text={}'.format(bot_api, chat_id, text)
         try:
             requests.get(post_url, headers=headers)
+            print('推送成功')
         except Exception:
             print("推送失败")
             time.sleep(3)
@@ -236,15 +229,15 @@ class HostlocGetPoints():
                 try:
                     s = self.login(user_list[i], passwd_list[i])
                     self.get_points(s, i + 1)
-                    print('*' * 30 + '\n')
+                    print('*' * 30)
                 except Exception as e:
-                    self.tg_text = self.tg_text + '程序执行异常：' + str(e)
+                    self.tg_text = self.tg_text + '程序执行异常：'
                     print('程序执行异常：' + str(e))
-                    print('*' * 30 + '\n')
+                    print('*' * 30 +)
                 continue
             self.tg_text = self.tg_text + '程序执行完毕，获取积分过程结束'
             print('程序执行完毕，获取积分过程结束')
-
+        print(self.tg_text)
         self.post(bot_api, chat_id, self.tg_text)
 
 
