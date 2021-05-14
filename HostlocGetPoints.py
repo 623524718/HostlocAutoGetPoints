@@ -223,7 +223,7 @@ class HostlocGetPoints():
             self.print_my_ip()
             self.tg_text = self.tg_text + '共检测到{}个帐户，开始获取积分\n'.format(len(user_list))
             print('共检测到', len(user_list), '个帐户，开始获取积分')
-            print('*' * 30 + '\n')
+            print('*' * 30)
             # 依次登录帐户获取积分，出现错误时不中断程序继续尝试下一个帐户
             for i in range(len(user_list)):
                 try:
