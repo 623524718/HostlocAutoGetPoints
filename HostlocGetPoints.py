@@ -182,7 +182,7 @@ class HostlocGetPoints():
             res = requests.get(url=api_url)
             res.raise_for_status()
             res.encoding = 'utf-8'
-            self.tg_text = self.tg_text + '当前使用 ip 地址：' + res.text + '\n'
+            self.tg_text = self.tg_text + '当前使用 ip 地址：' + res.text.replace('.', '') + '\n'
             print('当前使用 ip 地址：' + res.text)
         except Exception as e:
             self.tg_text = self.tg_text + '获取当前 ip 地址失败：' + str(e) + '\n'
@@ -237,7 +237,7 @@ class HostlocGetPoints():
                 continue
             self.tg_text = self.tg_text + '程序执行完毕，获取积分过程结束'
             print('程序执行完毕，获取积分过程结束')
-        print(self.tg_text)
+#         print(self.tg_text)
         self.post(bot_api, chat_id, self.tg_text)
 
 
