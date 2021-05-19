@@ -13,7 +13,7 @@
 
 'HOSTLOC_PASSWORD'  密码，多个用','英文逗号隔开，与用户名一一对应，不对应和上下数量不一致会报错。
 
-'BOT_API'  TG BOT的API
+'BOT_API'  TG机器人的API
 
 'CHAT_ID'  你自己的chat_id
 
