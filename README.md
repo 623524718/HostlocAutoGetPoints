@@ -8,8 +8,11 @@
 
 ### Actions secrets 设置
 HOSTLOC_USERNAME  用户名，多个用','英文逗号隔开
+
 HOSTLOC_PASSWORD  密码，多个用','英文逗号隔开，与用户名一一对应，不对应和上下数量不一致会报错。
+
 BOT_API  TG BOT的API
+
 CHAT_ID  你自己的chat_id
 
 ### API 在@BotFather申请，chat_id可以通过机器人@userinfobot发送任意消息获取，返回的id即是chat_id
