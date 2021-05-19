@@ -1,5 +1,7 @@
 # HostlocAutoGetPoints
 
+# 此代码是在inkuang大佬的基础上稍作改变，增加了TG推送。感谢MJJ的贡献
+
 ### 推送结果
 
 ![image](https://user-images.githubusercontent.com/64535826/118832486-3c1c8d80-b8f3-11eb-9d42-77bbd3b56e90.png)
