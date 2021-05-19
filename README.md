@@ -7,17 +7,23 @@
 因为发现TG机器人推送内容包含'xxx.xxx.xxx.xxx'时会推送失败,故改为'xxx,xxx,xxx,xxx'以英文逗号形式输出ip地址。
 
 ### Actions secrets 设置
-HOSTLOC_USERNAME  用户名，多个用','英文逗号隔开
+'HOSTLOC_USERNAME'  用户名，多个用','英文逗号隔开
 
-HOSTLOC_PASSWORD  密码，多个用','英文逗号隔开，与用户名一一对应，不对应和上下数量不一致会报错。
+'HOSTLOC_PASSWORD'  密码，多个用','英文逗号隔开，与用户名一一对应，不对应和上下数量不一致会报错。
 
-BOT_API  TG BOT的API
+'BOT_API'  TG BOT的API
 
-CHAT_ID  你自己的chat_id
+'CHAT_ID'  你自己的chat_id
 
 ### API 在@BotFather申请，chat_id可以通过机器人@userinfobot发送任意消息获取，返回的id即是chat_id
 
 ### 建议搬到私人库自己使用
+
+![image](https://user-images.githubusercontent.com/64535826/118836731-b8fd3680-b8f6-11eb-8601-101e10c0533c.png)
+
+![image](https://user-images.githubusercontent.com/64535826/118837247-3628ab80-b8f7-11eb-97c8-d6cf4bc84926.png)
+
+
 
 ### Action workflow设置
 ![image](https://user-images.githubusercontent.com/64535826/118829855-13939400-b8f1-11eb-8c95-44745e1242f5.png)
